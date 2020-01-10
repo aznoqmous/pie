@@ -20,7 +20,6 @@ export default class Pie {
 
     this.init()
     this.build()
-    console.log(this)
   }
 
   init(){

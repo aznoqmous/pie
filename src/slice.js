@@ -62,6 +62,7 @@ export default class Slice {
       parent: this.parent,
       style: {
         position: 'absolute',
+        display: (this.showValue) ? 'block' : 'none' ,
         zIndex: 100
       },
       attributes: {
