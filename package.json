@@ -1,0 +1,23 @@
+{
+  "name": "piejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/pie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aznoqmous/pie.git"
+  },
+  "keywords": [
+    "pie",
+    "js"
+  ],
+  "author": "aznoqmous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aznoqmous/pie/issues"
+  },
+  "homepage": "https://github.com/aznoqmous/pie#readme"
+}
