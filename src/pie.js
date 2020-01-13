@@ -42,7 +42,8 @@ export default class Pie {
         padding: this.padding,
         color: this.color,
         fontFamily: this.font,
-        transition: this.transition
+        transition: this.transition,
+        boxShadow: '0 2px 2px rgba(0,0,0,0.2)'
       }
     })
   }
@@ -52,13 +53,16 @@ export default class Pie {
     this.slices.map(slice=> offset += slice.value)
     let slice = new Slice({
       parent: this.pie,
-      value: value,
+      value: 0,
       offset: offset,
       scale: this.scale,
       backgroundColor: (color) ? color : this.getColor(this.slices.length),
       pie: this,
       showValue: this.showValue
     })
+    setTimeout(()=>{
+      slice.setValue(value)
+    }, 0)
     this.slices.push(slice)
     return slice
   }
